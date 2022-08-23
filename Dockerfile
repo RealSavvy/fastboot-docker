@@ -1,4 +1,4 @@
-FROM node:7-alpine
+FROM node:12.18.4-alpine
 
 COPY . /app
 
@@ -7,7 +7,7 @@ ENV \
   # ships with node-sass v4.0.1 with support for alpine bindings
   APK_PKGS='git openssh curl' \
   NODE_PKGS='bower node-gyp node-sass' \
-  YARN_VERSION='0.22.0'
+  YARN_VERSION='1.22.19'
 
 RUN \
 
